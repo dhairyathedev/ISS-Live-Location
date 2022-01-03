@@ -1,7 +1,7 @@
-mapboxgl.accessToken = 'pk.eyJ1Ijoic25vd2JpdCIsImEiOiJja3h2djdoeWoyamRoMnVvZTBybTdoYTl6In0.NdXYJWANzGLDt7hXorHnBA';
+mapboxgl.accessToken = 'YOUR_API_KEY';
     const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    style: 'mapbox://styles/mapbox/dark-v10', // style URL
     center: [-74.5, 40], // starting position [lng, lat]
     zoom: 0 // starting zoom
     });
@@ -26,9 +26,7 @@ const ISSLoc = (lng, lat) => {
         ]
       };
       for (const feature of geojson.features) {
-        const el = document.createElement('div');
-        el.className = 'marker';
-        const sat = document.querySelectorAll('.marker')
+        const el = document.getElementById('marker');
       
         new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
       }
