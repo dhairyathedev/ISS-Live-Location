@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'YOUR_API_KEY';
+mapboxgl.accessToken = 'sk.eyJ1IjoiZGhhaXJ5YXNoYWgtMjQiLCJhIjoiY2xuOHMwNHZyMDByOTJtbWQ5YWJzMmZ5eiJ9.GIN_6klWeopNwTl_xqi0RQ';
     const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/dark-v10', // style URL
